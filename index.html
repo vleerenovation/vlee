@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VLEE Renovation & Construction SDN BHD</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="json/data.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-tools" viewBox="0 0 32 32">
+                <title>tools</title>
+                <path fill="#e15649" style="fill: var(--color1, #e15649)" d="M11.825 15.724l3.693-4.079-11.080-11.135c-0.661-0.661-1.764-0.661-2.425 0l-1.488 1.488c-0.661 0.661-0.661 1.764 0 2.425l11.3 11.3z"></path>
+                <path fill="#c3c7cb" style="fill: var(--color2, #c3c7cb)" d="M29.354 31.655l2.646 0.331-0.386-2.701-2.425-1.654-1.543 1.599 1.709 2.425z"></path>
+                <path fill="#e0e0e0" style="fill: var(--color3, #e0e0e0)" d="M17.613 19.142l10.088 10.088 1.543-1.543-10.088-10.088-1.543 1.543z"></path>
+                <path fill="#bc342e" style="fill: var(--color4, #bc342e)" d="M12.156 12.693c-0.165 0-0.276-0.055-0.386-0.165l-9.371-9.371c-0.22-0.22-0.22-0.551 0-0.772s0.551-0.22 0.772 0l9.371 9.371c0.22 0.22 0.22 0.551 0 0.772-0.11 0.11-0.221 0.165-0.386 0.165z"></path>
+                <path fill="#7f7c79" style="fill: var(--color5, #7f7c79)" d="M17.613 9.22c1.268-1.268 1.433-3.252 0.11-4.575-2.591-2.591-4.079-2.315-7.001-2.315 4.41-1.929 7.607-2.37 10.804-0.882 1.378 0.606 1.929 1.158 3.032 2.26l1.984 1.984c0.496 0.496 0.827 1.158 0.937 1.819 0.165 1.047-0.11 1.268 0.606 2.040 0.221 0.22 0.551 0.22 0.772 0s0.551-0.22 0.772 0l1.929 1.929c0.441 0.441 0.441 1.102 0 1.543l-3.914 3.914c-0.441 0.441-1.102 0.441-1.543 0l-1.819-1.874c-0.221-0.22-0.221-0.551 0-0.772s0.221-0.606 0-0.827c-0.772-0.772-0.992-0.496-2.040-0.606-0.717-0.11-1.323-0.441-1.819-0.937l-2.811-2.701z"></path>
+                <path fill="#565656" style="fill: var(--color6, #565656)" d="M17.613 9.22l-17.088 19.128c-0.661 0.661-0.717 1.764-0.055 2.37l0.772 0.772c0.661 0.661 1.709 0.606 2.37-0.055l17.143-19.183-3.142-3.032z"></path>
+                <path fill="#e15649" style="fill: var(--color1, #e15649)" d="M14.912 18.756l1.543 1.543 3.914-3.914-1.764-1.764-3.693 4.134z"></path>
+            </symbol>
+            <symbol id="icon-plumbing" viewBox="0 0 32 32">
+                <title>plumbing</title>
+                <path fill="#666" style="fill: var(--color16, #666)" d="M18.885 8.82h-5.508c-0.272 0-0.492 0.22-0.492 0.492s0.22 0.492 0.492 0.492h2.131v3.967c0 0.272 0.22 0.492 0.492 0.492s0.492-0.22 0.492-0.492v-3.967h2.393c0.272 0 0.492-0.22 0.492-0.492s-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#eb6836" style="fill: var(--color17, #eb6836)" d="M18.754 7.508c-0.994 0-1.803 0.809-1.803 1.803s0.809 1.803 1.803 1.803 1.803-0.809 1.803-1.803-0.809-1.803-1.803-1.803z"></path>
+                <path fill="#eb6836" style="fill: var(--color17, #eb6836)" d="M13.246 7.508c-0.994 0-1.803 0.809-1.803 1.803s0.809 1.803 1.803 1.803 1.803-0.809 1.803-1.803-0.809-1.803-1.803-1.803z"></path>
+                <path fill="#f7d04a" style="fill: var(--color18, #f7d04a)" d="M30.328 0.164h-3.967c-0.272 0-0.492 0.22-0.492 0.492v11.148c0 0.814-0.662 1.475-1.475 1.475h-16.82c-3.525 0-6.393 2.868-6.393 6.393v11.541c0 0.272 0.22 0.492 0.492 0.492h3.967c0.272 0 0.492-0.22 0.492-0.492v-11.541c0-0.814 0.662-1.475 1.475-1.475h16.82c3.525 0 6.393-2.868 6.393-6.393v-11.148c0-0.272-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#eb6836" style="fill: var(--color17, #eb6836)" d="M13.902 12.066h-1.574c-0.272 0-0.492 0.22-0.492 0.492v6.295c0 0.272 0.22 0.492 0.492 0.492h1.574c0.272 0 0.492-0.22 0.492-0.492v-6.295c0-0.272-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#eb6836" style="fill: var(--color17, #eb6836)" d="M19.672 12.066h-1.574c-0.272 0-0.492 0.22-0.492 0.492v6.295c0 0.272 0.22 0.492 0.492 0.492h1.574c0.272 0 0.492-0.22 0.492-0.492v-6.295c0-0.272-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#eb6836" style="fill: var(--color17, #eb6836)" d="M31.508 2.131h-6.295c-0.272 0-0.492 0.22-0.492 0.492v1.574c0 0.272 0.22 0.492 0.492 0.492h6.295c0.272 0 0.492-0.22 0.492-0.492v-1.574c0-0.272-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#eb6836" style="fill: var(--color17, #eb6836)" d="M6.787 27.18h-6.295c-0.272 0-0.492 0.22-0.492 0.492v1.574c0 0.272 0.22 0.492 0.492 0.492h6.295c0.272 0 0.492-0.22 0.492-0.492v-1.574c0-0.272-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M14.393 12.557c0-0.272-0.22-0.492-0.492-0.492h-1.574c-0.272 0-0.492 0.22-0.492 0.492v0.721h2.557v-0.721z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M11.836 18.852c0 0.272 0.22 0.492 0.492 0.492h1.574c0.272 0 0.492-0.22 0.492-0.492v-0.656h-2.557v0.656z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M17.607 18.852c0 0.272 0.22 0.492 0.492 0.492h1.574c0.272 0 0.492-0.22 0.492-0.492v-0.656h-2.557v0.656z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M20.164 12.557c0-0.272-0.22-0.492-0.492-0.492h-1.574c-0.272 0-0.492 0.22-0.492 0.492v0.721h2.557v-0.721z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M25.213 2.131c-0.272 0-0.492 0.22-0.492 0.492v1.574c0 0.272 0.22 0.492 0.492 0.492h0.656v-2.557h-0.656z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M31.508 2.131h-0.689v2.557h0.689c0.272 0 0.492-0.22 0.492-0.492v-1.574c0-0.272-0.22-0.492-0.492-0.492z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M0.492 27.18c-0.272 0-0.492 0.22-0.492 0.492v1.574c0 0.272 0.22 0.492 0.492 0.492h0.688v-2.557h-0.689z"></path>
+                <path fill="#fd9d7e" style="fill: var(--color19, #fd9d7e)" d="M6.787 29.738c0.272 0 0.492-0.22 0.492-0.492v-1.574c0-0.272-0.22-0.492-0.492-0.492h-0.656v2.557h0.656z"></path>
+                <path fill="#62c9cc" style="fill: var(--color20, #62c9cc)" d="M16.398 19.908c-0.193-0.266-0.603-0.266-0.796 0-0.399 0.55-3.897 5.436-3.897 7.633 0 2.368 1.927 4.295 4.295 4.295s4.295-1.927 4.295-4.295c0-2.197-3.498-7.083-3.897-7.633z"></path>
+                <path fill="#50a9a9" style="fill: var(--color21, #50a9a9)" d="M17.41 30.689c-2.368 0-4.295-1.927-4.295-4.295 0-1.673 2.029-4.906 3.172-6.595-0.217-0.157-0.528-0.107-0.685 0.11-0.399 0.55-3.897 5.436-3.897 7.633 0 2.368 1.927 4.295 4.295 4.295 1.354 0 2.564-0.631 3.351-1.613-0.584 0.297-1.243 0.466-1.942 0.466z"></path>
+                <path fill="#d4f2e8" style="fill: var(--color22, #d4f2e8)" d="M17.705 28.984c0 0.652-0.528 1.18-1.18 1.18s-1.18-0.528-1.18-1.18c0-0.652 0.528-1.18 1.18-1.18s1.18 0.528 1.18 1.18z"></path>
+                <path fill="#d4f2e8" style="fill: var(--color22, #d4f2e8)" d="M18.361 26.361c0 0.435-0.352 0.787-0.787 0.787s-0.787-0.352-0.787-0.787c0-0.435 0.352-0.787 0.787-0.787s0.787 0.352 0.787 0.787z"></path>
+            </symbol>
+            <symbol id="icon-engineer" viewBox="0 0 32 32">
+                <title>engineer</title>
+                <path fill="#faba81" style="fill: var(--color1, #faba81)" d="M7.724 11.586v2.759c0 4.855 3.697 9.931 8.276 9.931s8.276-5.076 8.276-9.931v-2.759h-16.552z"></path>
+                <path fill="#f4ba48" style="fill: var(--color2, #f4ba48)" d="M18.207 1.655v-0.552c0-0.607-0.497-1.103-1.103-1.103h-2.207c-0.607 0-1.103 0.497-1.103 1.103v0.552c-4.138 0.993-7.172 4.414-7.172 8.828v1.103h18.759v-1.103c0-4.414-3.035-7.835-7.172-8.828z"></path>
+                <path fill="#b58024" style="fill: var(--color3, #b58024)" d="M18.207 4.414c-0.331 0-0.552-0.221-0.552-0.552v-1.655c0-0.331 0.221-0.552 0.552-0.552s0.552 0.221 0.552 0.552v1.655c0 0.331-0.221 0.552-0.552 0.552z"></path>
+                <path fill="#b58024" style="fill: var(--color3, #b58024)" d="M13.793 4.414c-0.331 0-0.552-0.221-0.552-0.552v-1.655c0-0.331 0.221-0.552 0.552-0.552s0.552 0.221 0.552 0.552v1.655c-0 0.331-0.221 0.552-0.552 0.552z"></path>
+                <path fill="#b58024" style="fill: var(--color3, #b58024)" d="M26.483 12.138h-20.965c-0.331 0-0.552-0.221-0.552-0.552s0.221-0.552 0.552-0.552h20.965c0.331 0 0.552 0.221 0.552 0.552s-0.221 0.552-0.552 0.552z"></path>
+                <path fill="#364875" style="fill: var(--color4, #364875)" d="M18.207 29.241h-4.414l2.207-4.965 2.207 4.965z"></path>
+                <path fill="#364875" style="fill: var(--color4, #364875)" d="M13.241 32l0.552-2.759h4.414l0.552 2.759h-5.517z"></path>
+                <path fill="#5869a0" style="fill: var(--color5, #5869a0)" d="M10.097 21.021l-0.165-0.055-0.552 2.207 4.414 6.069 2.207-4.965c-2.317 0-4.414-1.324-5.903-3.255z"></path>
+                <path fill="#5869a0" style="fill: var(--color5, #5869a0)" d="M21.903 21.021c-1.49 1.931-3.586 3.255-5.903 3.255l2.207 4.965 4.414-6.069-0.552-2.207-0.166 0.055z"></path>
+                <path fill="#7383bf" style="fill: var(--color6, #7383bf)" d="M30.676 27.421c-3.035-1.6-5.959-2.814-8.607-3.145h-0.276l-3.586 4.965 0.552 2.759h13.241v-2.372c0-0.938-0.497-1.765-1.324-2.207z"></path>
+                <path fill="#7383bf" style="fill: var(--color6, #7383bf)" d="M10.207 24.276h-0.276c-2.648 0.331-5.572 1.545-8.607 3.145-0.828 0.441-1.324 1.269-1.324 2.207v2.372h13.241l0.552-2.759-3.586-4.965z"></path>
+                <path fill="#b58024" style="fill: var(--color3, #b58024)" d="M7.945 5.793l4.193 0.828-0.828-4.028c-1.379 0.772-2.538 1.876-3.366 3.2z"></path>
+                <path fill="#b58024" style="fill: var(--color3, #b58024)" d="M24.055 5.793l-4.193 0.828 0.828-4.028c1.379 0.772 2.538 1.876 3.366 3.2z"></path>
+            </symbol>
+            <symbol id="icon-home" viewBox="0 0 32 32">
+                <title>home</title>
+                <path fill="#680b09" style="fill: var(--color4, #680b09)" d="M23.263 3.076h5.17v9.822h-5.17v-9.822z"></path>
+                <path fill="#c43d27" style="fill: var(--color5, #c43d27)" d="M22.746 2.042h6.204v1.034h-6.204v-1.034z"></path>
+                <path fill="#207700" style="fill: var(--color6, #207700)" d="M0 27.89h31.535v2.068h-31.535v-2.068z"></path>
+                <path fill="#207700" style="fill: var(--color6, #207700)" d="M3.619 23.393l1.034-0.517 1.034 0.517v5.583l-1.034 0.517-1.034-0.517z"></path>
+                <path fill="#207700" style="fill: var(--color6, #207700)" d="M0 23.393l1.034-0.517 1.034 0.517v5.583l-1.034 0.517-1.034-0.517z"></path>
+                <path fill="#239b02" style="fill: var(--color7, #239b02)" d="M1.034 25.305h3.619v1.034h-3.619v-1.034z"></path>
+                <path fill="#fff" style="fill: var(--color8, #fff)" d="M7.237 14.449h21.195v14.475h-21.195v-14.475z"></path>
+                <path fill="#e8f9fc" style="fill: var(--color9, #e8f9fc)" d="M7.237 14.449h21.195v14.475z"></path>
+                <path fill="#fca12a" style="fill: var(--color10, #fca12a)" d="M16.543 27.89v-9.667c0-0.465-0.155-0.672-0.62-0.672h-4.808c-0.465 0-0.775 0.258-0.775 0.672v9.667h6.204z"></path>
+                <path fill="#e58613" style="fill: var(--color11, #e58613)" d="M16.543 23.237v-5.015c0-0.465-0.155-0.672-0.62-0.672h-4.808c-0.465 0-0.775 0.258-0.775 0.672z"></path>
+                <path fill="#db5435" style="fill: var(--color12, #db5435)" d="M15.922 22.772c0 0.465-0.362 0.879-0.879 0.879-0.465 0-0.879-0.362-0.879-0.879 0-0.465 0.362-0.879 0.879-0.879 0.465 0 0.879 0.362 0.879 0.879z"></path>
+                <path fill="#c43d27" style="fill: var(--color5, #c43d27)" d="M15.664 22.152c0.362 0.31 0.31 0.879 0 1.241s-0.879 0.31-1.241 0z"></path>
+                <path fill="#0e75af" style="fill: var(--color13, #0e75af)" d="M22.229 20.136h3.102v-1.913c0-0.465-0.517-0.672-0.982-0.672h-2.12v2.585z"></path>
+                <path fill="#1ea4c4" style="fill: var(--color14, #1ea4c4)" d="M21.712 20.136v-2.585h-2.326c-0.465 0-0.775 0.258-0.775 0.672v1.913h3.102z"></path>
+                <path fill="#0e75af" style="fill: var(--color13, #0e75af)" d="M21.712 20.653h-3.102v2.016c0 0.465 0.31 0.569 0.775 0.569h2.326v-2.585z"></path>
+                <path fill="#1ea4c4" style="fill: var(--color14, #1ea4c4)" d="M22.229 20.653v2.585h2.12c0.465 0 0.982-0.103 0.982-0.569v-2.016h-3.102z"></path>
+                <path fill="#c43d27" style="fill: var(--color5, #c43d27)" d="M32 14.449l-14.165-11.063-14.113 11.063z"></path>
+                <path fill="#aa1e0f" style="fill: var(--color15, #aa1e0f)" d="M32 14.449l-14.165-11.063-7.186 11.063z"></path>
+                <path fill="#c43d27" style="fill: var(--color5, #c43d27)" d="M7.703 11.347h20.317l-1.292-1.034h-17.732z"></path>
+                <path fill="#c43d27" style="fill: var(--color5, #c43d27)" d="M12.304 7.729h11.115l-0.672-0.517h-9.771z"></path>
+            </symbol>
+        </defs>
+    </svg>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">VLEE</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">VLEE Renovation & Construction</div>
+                <div class="intro-heading">In our work we have pride, quality is what we provide.</div>
+                <!--<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">We provide cost efficiency and good quality services.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="fa-stack fa-5x">
+                        <svg class="icon icon-tools"><use xlink:href="#icon-plumbing"></use></svg>
+                    </span>
+                    <h4 class="service-heading">Plumbing</h4>
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-5x">
+                        <svg class="icon icon-tools"><use xlink:href="#icon-home"></use></svg>
+                    </span>
+                    <h4 class="service-heading">Renovation</h4>
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-5x">
+                        <svg class="icon icon-tools"><use xlink:href="#icon-engineer"></use></svg>
+                    </span>
+                    <h4 class="service-heading">Construction</h4>
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-5x">
+                        <svg class="icon icon-tools"><use xlink:href="#icon-tools"></use></svg>
+                    </span>
+                    <h4 class="service-heading">Maintenance</h4>
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <script type="text/javascript" >
+                    for (var i = 0; i < projectThumb.length; i++) {
+                    //<![CDATA[
+                        document.write("<div class=\"col-md-4 col-sm-6 portfolio-item\">")
+                        document.write("<a href=\"#portfolioModal" + projectThumb[i].id + "\"class=\"portfolio-link\" data-toggle=\"modal\">")
+                        document.write("<div class=\"portfolio-hover\">")
+                        document.write("<div class=\"portfolio-hover-content\">")
+                        document.write("<i class=\"fa fa-plus fa-3x\"></i>")
+                        document.write("</div>")
+                        document.write("</div>")
+                        document.write("<img src=\"img/portfolio/" + projectThumb[i].filename + ".jpg\" class=\"img-responsive\">")
+                        document.write("</a>")
+                        // document.write("<div class=\"portfolio-caption\">")
+                        // document.write("<h4>Bangalow Renovation</h4>")
+                        // document.write("<p class=\"text-muted\">Bukit Rimau</p>")
+                        // document.write("</div>")
+                        document.write("</div>")
+                    }
+                    //]]>
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <p class="section-subheading">Incorporated on 2010, VLEE Renovation & Construction Sdn Bhd is a private limited company, located at S-9-01, The Gamuda Biz Suite No,12, Jalan Anggerik Vanilla 31/99, Kota Kemuning, 40460 Shah Alam, Selangor. The founders of VLEE is Mr. Lee Chee Chin, our Director. Mr. Lee was graduated from Inti College Malaysia, Nilai and hold a Higher Diploma in Civil Engineering. He have in excess of 10 year’s experience in the construction industry. He is the key person on company daily operation, strategic direction development, growth and expansion.</p>
+                    <p>VLEE is growing from Mr. Lee alone himself until today comprise over 30 trained workers and supervisors. They are well trained to provide good quality and high standard of the construction works to our vast range of customers.</p>
+
+                    <h3 class="section-heading">Vision</h3>
+                    <p>Our Vision is to be recognized as the most trusted and respected construction company, and to deliver the high quality and standards construction services.</p>
+                    
+                    <h3 class="section-heading">Mission</h3>
+                    <p>To provide any construction, renovation & maintenance services, in any time, any place or environment; for the benefit of our customers and get the full satisfaction</p>
+                    
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Jay Lee Chee Chin</h4>
+                        <p class="text-muted">Director & Construction Manager</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Lee Chee Seng</h4>
+                        <p class="text-muted">Maintenance Manager</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Tan Kim Tee</h4>
+                        <p class="text-muted">Renovation Manager</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Jay Lee Chee Chin</h4>
+                        <p class="text-muted">Construction Manager</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>-->
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/jia.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Tan Jia Hui</h4>
+                        <p class="text-muted">Finance & Account Manager</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Lee Ngan</h4>
+                        <p class="text-muted">Maintenance Assistant</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Lee Mau Chiaa</h4>
+                        <p class="text-muted">Renovation Assistant</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Tan Chi Heo</h4>
+                        <p class="text-muted">Construction Assistant</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/hwa.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Gan Choon Hwa</h4>
+                        <p class="text-muted">Admin & Account Assistant</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <!--<aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>-->
+
+    <!-- Contact Section -->
+    <section>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Contact Us</h2>
+                        <div class="col-sm-4"><h4>Fax: 03-5131 9727</h4></div>
+                        <div class="col-sm-4"><h4>Tel: 03-5525 2859</h4></div>
+                        <div class="col-sm-4"><a href="mailto:vleerenovation@gmail.com" target="_blank"><h4>vleerenovation@gmail.com</h4></a>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22538.9155938751!2d101.53052818837513!3d2.9987371928513658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab84f035e096c9db!2sVLEE+Renvation+%26+Construction+Sdn+Bhd!5e0!3m2!1sen!2sus!4v1487739483927" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; VLEE Renovation & Construction 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <!--<ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="col-md-4">
+                    <!--<ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Loop Portfolio Modal -->
+    <script type="text/javascript">
+    for (var i = 0; i < projectThumb.length; i++) {
+        document.write("<div class=\"portfolio-modal modal fade\" id=\"portfolioModal" + projectThumb[i].id + "\"tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">")
+        document.write("<div class=\"modal-dialog\">")
+        document.write("<div class=\"modal-content\">")
+        document.write("<div class=\"close-modal\" data-dismiss=\"modal\">")
+        document.write("<div class=\"lr\">")
+        document.write("<div class=\"rl\">")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("<div class=\"container\">")
+        document.write("<div class=\"row\">")
+        document.write("<div class=\"col-lg-8 col-lg-offset-2\">")
+        document.write("<div class=\"modal-body\">")
+        document.write("<img class=\"img-responsive img-centered\" src=\"img/portfolio/large/" + projectThumb[i].filename + ".jpg\">")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+    }
+    </script>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
+
+<!--Tel: 03-5525 2859  Fax: 03-5131 9727
+Email: vleerenovation@gmail.com
+S-9-01, The Gamuda Biz Suite
+No.12, Jalan Anggerik  Vanilla 31/99,
+Kota Kemuning 40460 Shah Alam, Selangor Darul Ehsan-->
