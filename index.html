@@ -229,23 +229,85 @@
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Maintenance</h2>
                     <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
             </div>
             <div class="row">
                 <script type="text/javascript" >
-                    for (var i = 0; i < projectThumb.length; i++) {
+                    for (var i = 0; i < maintenance.length; i++) {
                     //<![CDATA[
                         document.write("<div class=\"col-md-4 col-sm-6 portfolio-item\">")
-                        document.write("<a href=\"#portfolioModal" + projectThumb[i].id + "\"class=\"portfolio-link\" data-toggle=\"modal\">")
+                        document.write("<a href=\"#portfolioMaintenanceModal" + maintenance[i].id + "\"class=\"portfolio-link\" data-toggle=\"modal\">")
                         document.write("<div class=\"portfolio-hover\">")
                         document.write("<div class=\"portfolio-hover-content\">")
                         document.write("<i class=\"fa fa-plus fa-3x\"></i>")
                         document.write("</div>")
                         document.write("</div>")
-                        document.write("<img src=\"img/portfolio/" + projectThumb[i].filename + ".jpg\" class=\"img-responsive\">")
+                        document.write("<img src=\"img/portfolio/maintenance/" + maintenance[i].filename + ".jpg\" class=\"img-responsive\">")
+                        document.write("</a>")
+                        // document.write("<div class=\"portfolio-caption\">")
+                        // document.write("<h4>Bangalow Renovation</h4>")
+                        // document.write("<p class=\"text-muted\">Bukit Rimau</p>")
+                        // document.write("</div>")
+                        document.write("</div>")
+                    }
+                    //]]>
+                </script>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Renovation</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <script type="text/javascript" >
+                    for (var i = 0; i < renovation.length; i++) {
+                    //<![CDATA[
+                        document.write("<div class=\"col-md-4 col-sm-6 portfolio-item\">")
+                        document.write("<a href=\"#portfolioRenovationModal" + renovation[i].id + "\"class=\"portfolio-link\" data-toggle=\"modal\">")
+                        document.write("<div class=\"portfolio-hover\">")
+                        document.write("<div class=\"portfolio-hover-content\">")
+                        document.write("<i class=\"fa fa-plus fa-3x\"></i>")
+                        document.write("</div>")
+                        document.write("</div>")
+                        document.write("<img src=\"img/portfolio/renovation/" + renovation[i].filename + ".jpg\" class=\"img-responsive\">")
+                        document.write("</a>")
+                        // document.write("<div class=\"portfolio-caption\">")
+                        // document.write("<h4>Bangalow Renovation</h4>")
+                        // document.write("<p class=\"text-muted\">Bukit Rimau</p>")
+                        // document.write("</div>")
+                        document.write("</div>")
+                    }
+                    //]]>
+                </script>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Construction</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <script type="text/javascript" >
+                    for (var i = 0; i < construction.length; i++) {
+                    //<![CDATA[
+                        document.write("<div class=\"col-md-4 col-sm-6 portfolio-item\">")
+                        document.write("<a href=\"#portfolioConstructionModal" + construction[i].id + "\"class=\"portfolio-link\" data-toggle=\"modal\">")
+                        document.write("<div class=\"portfolio-hover\">")
+                        document.write("<div class=\"portfolio-hover-content\">")
+                        document.write("<i class=\"fa fa-plus fa-3x\"></i>")
+                        document.write("</div>")
+                        document.write("</div>")
+                        document.write("<img src=\"img/portfolio/construction/" + construction[i].filename + ".jpg\" class=\"img-responsive\">")
                         document.write("</a>")
                         // document.write("<div class=\"portfolio-caption\">")
                         // document.write("<h4>Bangalow Renovation</h4>")
@@ -457,8 +519,8 @@
 
     <!-- Loop Portfolio Modal -->
     <script type="text/javascript">
-    for (var i = 0; i < projectThumb.length; i++) {
-        document.write("<div class=\"portfolio-modal modal fade\" id=\"portfolioModal" + projectThumb[i].id + "\"tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">")
+    for (var i = 0; i < maintenance.length; i++) {
+        document.write("<div class=\"portfolio-modal modal fade\" id=\"portfolioMaintenanceModal" + maintenance[i].id + "\"tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">")
         document.write("<div class=\"modal-dialog\">")
         document.write("<div class=\"modal-content\">")
         document.write("<div class=\"close-modal\" data-dismiss=\"modal\">")
@@ -471,7 +533,55 @@
         document.write("<div class=\"row\">")
         document.write("<div class=\"col-lg-8 col-lg-offset-2\">")
         document.write("<div class=\"modal-body\">")
-        document.write("<img class=\"img-responsive img-centered\" src=\"img/portfolio/large/" + projectThumb[i].filename + ".jpg\">")
+        document.write("<img class=\"img-responsive img-centered\" src=\"img/portfolio/large/maintenance/" + maintenance[i].filename + ".jpg\">")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+    }
+
+    for (var i = 0; i < renovation.length; i++) {
+        document.write("<div class=\"portfolio-modal modal fade\" id=\"portfolioRenovationModal" + renovation[i].id + "\"tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">")
+        document.write("<div class=\"modal-dialog\">")
+        document.write("<div class=\"modal-content\">")
+        document.write("<div class=\"close-modal\" data-dismiss=\"modal\">")
+        document.write("<div class=\"lr\">")
+        document.write("<div class=\"rl\">")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("<div class=\"container\">")
+        document.write("<div class=\"row\">")
+        document.write("<div class=\"col-lg-8 col-lg-offset-2\">")
+        document.write("<div class=\"modal-body\">")
+        document.write("<img class=\"img-responsive img-centered\" src=\"img/portfolio/large/renovation/" + renovation[i].filename + ".jpg\">")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+    }
+
+    for (var i = 0; i < construction.length; i++) {
+        document.write("<div class=\"portfolio-modal modal fade\" id=\"portfolioConstructionModal" + construction[i].id + "\"tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">")
+        document.write("<div class=\"modal-dialog\">")
+        document.write("<div class=\"modal-content\">")
+        document.write("<div class=\"close-modal\" data-dismiss=\"modal\">")
+        document.write("<div class=\"lr\">")
+        document.write("<div class=\"rl\">")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("</div>")
+        document.write("<div class=\"container\">")
+        document.write("<div class=\"row\">")
+        document.write("<div class=\"col-lg-8 col-lg-offset-2\">")
+        document.write("<div class=\"modal-body\">")
+        document.write("<img class=\"img-responsive img-centered\" src=\"img/portfolio/large/construction/" + construction[i].filename + ".jpg\">")
         document.write("</div>")
         document.write("</div>")
         document.write("</div>")
